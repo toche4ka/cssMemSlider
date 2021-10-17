@@ -56,6 +56,27 @@ body {
   border-color: #777 !important;
 }
 
+.input_text {
+  display: flex;
+  padding-top: 28px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  color: aqua;
+  font-size: 27px;
+}
+
+.text {
+  display: inline-block;
+  width: 270px;
+  height: 33px;
+}
+
 #swich1:checked ~ .m1 {
   margin-left: 0;
 }
@@ -73,25 +94,4 @@ body {
 }
 #swich6:checked ~ .m6 {
   margin-left: -500%;
-}
-.input_text {
-  display: flex;
-  padding-top: 28px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.text {
-  display: flex;
-  justify-content: center;
-  color: aqua;
-  font-size: 27px;
-}
-
-.text {
-  width: 270px;
-  height: 33px;
-}
-
-@media (width: 768px) {
 }
