@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(73, 71, 88);
+}
+
+.slider {
+  position: relative;
+  width: 33%;
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  width: 100%;
+}
+
+.images img {
+  height: 600px;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+
+.images input {
+  display: none;
+}
+.controls {
+}
+.controls label {
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #bbb;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.controls label:hover {
+  background: #76c8ff;
+  border-color: #777 !important;
+}
+
+#swich1:checked ~ .m1 {
+  margin-left: 0;
+}
+#swich2:checked ~ .m2 {
+  margin-left: -100%;
+}
+#swich3:checked ~ .m3 {
+  margin-left: -200%x;
+}
+#swich4:checked ~ .m4 {
+  margin-left: -300%;
+}
+#swich5:checked ~ .m5 {
+  margin-left: -400%;
+}
+#swich6:checked ~ .m6 {
+  margin-left: -500%;
+}
